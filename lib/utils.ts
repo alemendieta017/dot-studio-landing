@@ -12,7 +12,7 @@ export function cn(...inputs: ClassValue[]) {
  */
 export function getWhatsAppLink(message?: string): string {
   const phoneNumber = '595994925946' // Número sin el + y espacios
-  const defaultMessage = 'Hola, me gustaría agendar una sesión o consultar sobre agendamientos disponibles.'
+  const defaultMessage = 'Hola, me gustaría agendar una sesión.'
   const text = encodeURIComponent(message || defaultMessage)
   return `https://wa.me/${phoneNumber}?text=${text}`
 }
